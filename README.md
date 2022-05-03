@@ -65,3 +65,9 @@ Checkout your forked repository on GitHub.com now. Your branch is visible.
 5. Run `git log`
 
 The new styles added to `main` were "truth" in GitHub first. We made our local machine catch up - even though we started those style changes on our machine. This process can expand to many developers contributing changes nicely.
+
+## Lessons to be added:
+
+1. Add a JS build to the gulp file
+2. Practice adding an npm package and using it in the JS/Sass builds
+3. Note how adding packages edits `package.json` and avoids tracking `node_modules`
