@@ -27,3 +27,41 @@ Look at the `index.html` file and see how the stylesheet referenced is in the `d
 The `gulp` utility took all the materials in `src/scss/` and used it to create the `dist/css/` folder.
 
 The way the project is configured currently, we can add any CSS or Sass code into the `_awesome.scss`, `_normal.scss`, or `_lame.scss` files and they'll all be compiled into a single css file called `app.css`.
+
+## Lesson 2: Play with Git
+
+### Ignored files
+In the earlier steps we created a `node_modules` directory with npm and a `dist` directory with Gulp.
+
+1. Look at the `.gitignore` file in the project. See which directories are not being tracked by git?
+2. In your terminal run the command `git status` and read the output.
+3. Add some new Sass/CSS to one of the files in the `src/css/` directory.
+4. Note on the webpage the change hasn't taken effect.
+5. In the terminal, run `gulp` to build the changes. Refresh the webpage and note the effect.
+6. In the terminal, run `git status` and note output: we're tracking `src/` but not `dist/`.
+
+### Work in a branch in your GitHub repo
+
+In the terminal, run these commands:
+
+`git branch feature/styles`
+
+`git checkout feature/styles`
+
+`git add .`
+
+`git commit -m "Adding new styles"`
+
+`git push`
+
+Checkout your forked repository on GitHub.com now. Your branch is visible.
+
+### Manage the project in GitHub
+
+1. Create a Pull Request (PR) of your `feature/styles` branch into the `main` branch of your repo
+2. Merge the PR
+3. In your terminal, run `git checkout main`
+4. Run `git pull`
+5. Run `git log`
+
+The new styles added to `main` were "truth" in GitHub first. We made our local machine catch up - even though we started those style changes on our machine. This process can expand to many developers contributing changes nicely.
