@@ -21,6 +21,9 @@ This is an example starter project to help practice the following:
 
 ### What Happened
 Refresh the webpage and note how css is now present. 
+
 Look at the `index.html` file and see how the stylesheet referenced is in the `dist` folder.
+
 The `gulp` utility took all the materials in `src/scss/` and used it to create the `dist/css/` folder.
+
 The way the project is configured currently, we can add any CSS or Sass code into the `_awesome.scss`, `_normal.scss`, or `_lame.scss` files and they'll all be compiled into a single css file called `app.css`.
